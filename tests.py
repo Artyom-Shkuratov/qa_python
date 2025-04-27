@@ -64,7 +64,7 @@ class TestBooksCollector:
         result = collector.get_list_of_favorites_books()
         assert 'Ночной дозор' in result
 
-    def test_get_books_genre_valid_book_returns_correct_mapping(self, collector):
+    def test_get_books_genre_valid_book_returns_correct_dict(self, collector):
         collector.add_new_book('Пила')
         collector.set_book_genre('Пила', 'Ужасы')
         assert collector.get_books_genre() == {"Пила": "Ужасы"}
