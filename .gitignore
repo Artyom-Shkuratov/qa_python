@@ -8,11 +8,16 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+<<<<<<< HEAD
 
 .pytest_cache/
 
 .coverage
 
+=======
+.pytest_cache/
+.coverage
+>>>>>>> 5027934 (Добавил .gitignore)
 htmlcov/
 *.log
 *.sqlite3

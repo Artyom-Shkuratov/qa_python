@@ -7,8 +7,7 @@ def collector():
 
 
 @pytest.fixture
-def filled_collector():
-    collector = BooksCollector()
+def filled_collector(collector):
     collector.add_new_book("Гарри Поттер")
     collector.set_book_genre("Гарри Поттер", "Фантастика")
 
